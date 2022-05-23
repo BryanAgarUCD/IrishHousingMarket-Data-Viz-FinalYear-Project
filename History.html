@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Irish housing data</title>
+    <meta charset="utf-8">
+    <!--Sets width to device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--External bootstrap plugin link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--jquery plugin-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--External link to icons used in footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <!--jquery plugin-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--External CSS sheet-->
+    <link rel="stylesheet" href="styles1.css" type="text/css" />
+    <!--Falcon image at top of website, Stock house image-->
+    <link rel="icon" href="falcon.png">
+    <link rel="shortcut icon" type="image/jpg" href="falcon.png" />
+    <!--Used when javascript is disabled-->
+    
+    <!--Google fonts external link-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!--Javascripy external file-->
+    <script src='myjs.js'></script>
+    <script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
+    <!--Code for parallax plugin-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!--External plugin for bottom viz-->
+    <script src="https://unpkg.com/pts/dist/pts.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<!--Internal CSS styling-->
+    <style>
+        body {
+            font-family: 'Montserrat';
+            font-size: 22px;
+        }
+
+        /* Remove the navbar's default margin-bottom and rounded borders */
+
+
+
+
+
+        h5 {
+            border-right: solid 3px rgba(0, 255, 0, .75);
+            white-space: nowrap;
+            overflow: hidden;
+            /*  font-family: 'Source Code Pro', monospace;  */
+            font-size: 28px;
+            color: rgba(0, 0, 0, .70);
+            margin: 0 auto;
+        }
+
+        /* Animation */
+        h5 {
+            animation: animated-text 10s steps(40, end) 2s 1 normal both,
+                animated-cursor 600ms steps(40, end) infinite;
+        }
+
+        /* text animation */
+
+        @keyframes animated-text {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* cursor animations */
+
+        @keyframes animated-cursor {
+            from {
+                border-right-color: rgba(0, 255, 0, .75);
+            }
+
+            to {
+                border-right-color: transparent;
+            }
+        }
+
+        
+    </style>
+</head>
+<!--Body content of website-->
+<body>
+<!--Image for falcon of website-->
+    
+    <!-- Makes Nav var fixed in postion throughout website -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Final Year Project</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="Indepth.html">Detailed Stats</a></li>
+                    <li class="active"><a href="History.html">History</a></li>
+                    <li><a href="trends.html">Trends</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--Start of main content-->
+    <br>
+    <div class="jumbotron">
+        <div class="container text-center">
+            <br>
+            <br>
+<!--Animated text for header-->
+            <h1 class="animate__animated animate__bounce">Housing Data</h1>
+            <p class="animate__animated animate__bounce">Data Viz History</p>
+            <br>
+        </div>
+    </div>
+<!--Chat bot code-->
+    <script src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+    <script>
+        var myLandbot = new Landbot.Livechat({
+            configUrl: 'https://chats.landbot.io/v3/H-826045-062XD1QMS29P8UXY/index.json',
+        });
+    </script>
+    <noscript> To use this site, please enable JavaScript.</noscript>
+<!--Start of container and main content-->
+    <div class="container">
+        <div class="container text-center">
+        <h4> <button type="button" name="button" id="btn">Toggle for dark mode</button></h4>
+        </div>
+        <h3><b><em>How, Who, What is behind it?</em></b></h3><br>
+        <div class="col">
+            <p>Data visualization was only recognized as a branch of statistics after a professor named John W Tukey wrote a historical paper called ‘The Future of Data Analysis’. In this paper he called for data visualization to be recognized in the legitimate branch of statistics and not just simply a part of mathematics.
+                After publication of this paper he began to invent a wide variety of new, simple and effective graphic displays, under the name of “Exploratory Data Analysis” (EDA) <br><br>These include many diagrams we know today such as - stem-leaf plots, box plots, hanging rootograms, two-way table displays to name a few examples. Many of his graphics have now entered the statistical vocabulary and are included in visualization and statistical software implementation today.
+
+            </p>
+            <p>
+                Since the creation of data visualization from mapping out the sun position for ancient burial grounds to the now more advanced methods, John W Tukey was the fire that ignited innovation in this field.
+                <br><br>
+                From 1977 to the 21th century it has rapidly increased, helped by through the development of programming languages such as C which was created by Bell labs in 1994.
+                <br><br>
+                Software development in large-scale statistical and graphics software engineering projects in the private sector such as SAS and open source developments such as the R project have led to rapidly increased innovation, technology and computing power. 
+                As a result, interest in data visualization has grown, as have the number of applications being created in the field.
+
+
+
+
+
+            </p>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <br>
+<!--JOHN turkey div content-->
+
+    <div id='historybox' class="row">
+        
+        <div class="col-sm-4">
+
+            <H3 id=name1><i>John W Turkey</i></H3>
+            <br>
+            <div class="img-hover-zoom">
+            <img id='john' src="John_Tukey.jpg" alt="John Turkey"/>
+            </div>
+        </div>
+        <div class="col-sm-4">
+        <div class='historybox'>
+            <br>
+            <br>
+            <br>
+            <p>John Wilder Tukey (June 16, 1915 – July 26, 2000) was an American mathematician best known for development of the Fast Fourier Transform (FFT) algorithm and box plot.
+                <br>
+
+            
+            </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+        <div class='historybox'>
+            <br>
+            <br>
+            <p>He was awarded the National Medal of Science by President Nixon in 1973. He was awarded the IEEE Medal of Honor in 1982 "For his contributions to the spectral analysis of random processes and the fast Fourier transform (FFT) algorithm".</p>
+        </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="col text-center">
+            <h1>History behind data visualization</h1>
+            <br>
+            <div class="video-responsive">
+                <iframe width="950" height="500" src="https://www.youtube.com/embed/lR8NWQnApwE?controls=0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+<!--About me DIV-->
+    <h5>About me, Final year Student, IADT</h5>
+    <br>
+    <br>
+    <div>
+        <div id='historybox1' class="row">
+
+            <div class="col-sm-4">
+
+                <H3 id='name'>Bryan Agar</H3>
+                <br>
+                <div class="img-hover-zoom">
+                    <img id='bryan' src="profile.jpeg" alt="Bryan Agar" />
+                </div>
+                
+            </div>
+            <div class='aboutbox'>
+            <div class="col-sm-4">
+                <br>
+                <br>
+
+                <p>Final year student in IADT, Dublin
+                    <br>
+                    <br>
+                    BSc in Studying Creative media technolgies
+
+                </p>
+            </div>
+                
+            <div class="col-sm-4">
+                <br>
+                <p>Intrested in all things</p>
+                <ul>
+                    <li>Technololgy</li>
+                    <li>Video</li>
+                    <li>Programming</li>
+                    <li>Data analytics</li>
+
+                </ul>
+            </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+<!-- FOOTER CODE-->
+    <div class="container-fluid bg-3 text-center">
+        <footer class="footer-basic">
+            <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+            <div>
+                <a href='https://www.linkedin.com/in/bryanagar/' target="_blank">
+                    <ion-icon size="large" name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="mailto:bryanagar1.com" target="_blank">
+                    <ion-icon size="large" name="logo-google"></ion-icon>
+                </a>
+
+                <a href='https://github.com/BryanAgar' target="_blank">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                </a>
+                <a href='https://twitter.com/AgarBryan' target="_blank">
+                    <ion-icon size="large" name="logo-twitter"></ion-icon>
+                </a>
+                <a href='https://www.instagram.com/bryanagar/' target="_blank">
+                    <ion-icon size="large" name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+            <br>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="#">Indepth</a></li>
+                <li class="list-inline-item"><a href="History.html">History</a></li>
+                <li class="list-inline-item"><a href="trends.html">Trends</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="copyright">Bryan Agar © 2021</p>
+        </footer>
+<!--Progress bar code, set at bottom to let code know when it's at the end-->
+        <div class="header">
+            <h2>Scroll Indicator</h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+<!--JS Animation viz code, outsourced-->
+        <script>
+            // Source code licensed under Apache License 2.0. 
+            // Copyright © 2017 William Ngan. (https://github.com/williamngan/pts)
+
+            window.demoDescription = "In a field of points that revolves around a center, draw a perpendicular line from each point to a path.";
+
+            Pts.quickStart("#pt", "#123");
+
+            //// Demo code starts (anonymous function wrapper is optional) ---
+
+            (function() {
+
+                var pts = new Group();
+
+                space.add({
+
+                    // creatr 200 random points
+                    start: (bound) => {
+                        pts = Create.distributeRandom(space.innerBound, 400);
+                    },
+
+                    animate: (time, ftime) => {
+                        // make a line and turn it into an "op" (see the guide on Op for more)
+                        let perpend = new Group(space.center.$subtract(0.1), space.pointer).op(Line.perpendicularFromPt);
+                        pts.rotate2D(0.0005, space.center);
+
+                        pts.forEach((p, i) => {
+                            // for each point, find the perpendicular to the line
+                            let lp = perpend(p);
+                            var ratio = Math.min(1, 1 - lp.$subtract(p).magnitude() / (space.size.x / 2));
+                            form.stroke(`rgba(255,255,255,${ratio}`, ratio * 2).line([p, lp]);
+                            form.fillOnly(["#f03", "#09f", "#0c6"][i % 3]).point(p, 1);
+                        });
+                    },
+
+                });
+
+                //// ----
+
+
+                space.bindMouse().bindTouch().play();
+
+            })();
+        </script>
+        <script>
+                    // Persistence disabled
+                    var Nightly = new Nightly();
+                    document.getElementById("btn").addEventListener("click", function() {
+                        Nightly.toggle();
+                    });
+                </script>
+    </div>
+</body>
+
+</html>

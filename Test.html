@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Irish housing data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />-->
+    <link rel="icon" href="falcon.png">
+    <noscript>To use this site, please enable JavaScript.</noscript>
+    <!--<link rel="stylesheet" type="text/css" href="mystyle.css">-->-->
+    <script src="form.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src='myjs.js'> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://unpkg.com/pts/dist/pts.min.js"></script>
+  <style>
+    body {
+    font-family: 'Montserrat';font-size: 22px;
+}
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+      .LandbotLivechat {
+        left: 105px;
+    }
+
+    .LandbotPopup {
+        left: 105px;
+    }
+
+    .LandbotProactive {
+        left: 10px;
+    }
+
+    .LandbotFrame  {
+        left: 10px;}
+      
+    .parallax-window1 {
+	min-height: 750px;
+	background: transparent;
+}
+
+  </style>
+</head>
+<body>
+<link rel="icon" href="falcon.png">
+
+<!-- Makes Nav var fixed in postion throughout website -->
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    
+      <a class="navbar-brand" href="Test.html">Final Year Project</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li> <a href="Indepth.html">Detailed Stats</a></li>
+        <li><a href="History.html">History</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+<script>
+  var myLandbot = new Landbot.Livechat({
+    configUrl: 'https://chats.landbot.io/v3/H-826045-062XD1QMS29P8UXY/index.json',
+  });
+</script>
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="homepage1.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid bg-3 text-center">
+        <br>
+        <h3><b>Interactive Dublin housing map</b></h3>
+        <br>
+        <div class='tableauPlaceholder' id='viz1616599427180' style='position: relative; width: 904px; height: 320px'><noscript><a href='#'><img alt='Price(color) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HP&#47;HP7RQ3K63&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='path' value='shared&#47;HP7RQ3K63' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HP&#47;HP7RQ3K63&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-GB' />
+                <param name='filter' value='publish=yes' />
+            </object></div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1616599427180');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    
+    
+    <br>
+  <h3><b>Overview of housing data</b></h3><br>
+  <br>
+  <div class="row">
+      <div class="col-sm-4 ">
+          <p id='years'>2015</p>
+
+          <div class='tableauPlaceholder' id='viz1610890362885' id='divout' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2015Average&#47;Amount2015-2020&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                  <param name='embed_code_version' value='3' />
+                  <param name='site_root' value='' />
+                  <param name='name' value='2015Average&#47;Amount2015-2020' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2015Average&#47;Amount2015-2020&#47;1.png' />
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='language' value='en-GB' />
+                  <param name='filter' value='publish=yes' />
+              </object></div>
+          <script type='text/javascript'>
+              var divElement = document.getElementById('viz1610890362885');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+      </div>
+      <div class="col-sm-4">
+          <p id='years'>2016</p>
+          <div class='tableauPlaceholder' id='viz1610891070021' id='divout' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2016Average&#47;Amount2015-20202&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                  <param name='embed_code_version' value='3' />
+                  <param name='site_root' value='' />
+                  <param name='name' value='2016Average&#47;Amount2015-20202' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2016Average&#47;Amount2015-20202&#47;1.png' />
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='language' value='en-GB' />
+                  <param name='filter' value='publish=yes' />
+              </object></div>
+          <script type='text/javascript'>
+              var divElement = document.getElementById('viz1610891070021');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+      </div>
+      <div class="col-sm-4">
+          <p id='years'>2017</p>
+          <div class='tableauPlaceholder' id='viz1610891498378' id='divout' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2017Average&#47;Amount2015-20203&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                  <param name='embed_code_version' value='3' />
+                  <param name='site_root' value='' />
+                  <param name='name' value='2017Average&#47;Amount2015-20203' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2017Average&#47;Amount2015-20203&#47;1.png' />
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='language' value='en-GB' />
+                  <param name='filter' value='publish=yes' />
+              </object></div>
+          <script type='text/javascript'>
+              var divElement = document.getElementById('viz1610891498378');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+      </div>
+  </div><br>
+  <hr>
+  </div>
+
+  <br>
+
+  <div class="container-fluid bg-3 text-center">
+
+      <div class="row">
+          <div class="col-sm-4">
+              <p id='years'>2018</p>
+              <div class='tableauPlaceholder' id='viz1610891976008' id='divout' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2018Average&#47;Amount2015-20204&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                      <param name='embed_code_version' value='3' />
+                      <param name='site_root' value='' />
+                      <param name='name' value='2018Average&#47;Amount2015-20204' />
+                      <param name='tabs' value='no' />
+                      <param name='toolbar' value='yes' />
+                      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2018Average&#47;Amount2015-20204&#47;1.png' />
+                      <param name='animate_transition' value='yes' />
+                      <param name='display_static_image' value='yes' />
+                      <param name='display_spinner' value='yes' />
+                      <param name='display_overlay' value='yes' />
+                      <param name='display_count' value='yes' />
+                      <param name='language' value='en-GB' />
+                      <param name='filter' value='publish=yes' />
+                  </object></div>
+              <script type='text/javascript'>
+                  var divElement = document.getElementById('viz1610891976008');
+                  var vizElement = divElement.getElementsByTagName('object')[0];
+                  vizElement.style.width = '100%';
+                  vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                  var scriptElement = document.createElement('script');
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              </script>
+          </div>
+          <div class="col-sm-4">
+              <p id='years'>2019</p>
+              <div class='tableauPlaceholder' id='viz1610892091260' id='divout' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2019Average&#47;Amount2015-20205&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                      <param name='embed_code_version' value='3' />
+                      <param name='site_root' value='' />
+                      <param name='name' value='2019Average&#47;Amount2015-20205' />
+                      <param name='tabs' value='no' />
+                      <param name='toolbar' value='yes' />
+                      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2019Average&#47;Amount2015-20205&#47;1.png' />
+                      <param name='animate_transition' value='yes' />
+                      <param name='display_static_image' value='yes' />
+                      <param name='display_spinner' value='yes' />
+                      <param name='display_overlay' value='yes' />
+                      <param name='display_count' value='yes' />
+                      <param name='language' value='en-GB' />
+                      <param name='filter' value='publish=yes' />
+                  </object></div>
+              <script type='text/javascript'>
+                  var divElement = document.getElementById('viz1610892091260');
+                  var vizElement = divElement.getElementsByTagName('object')[0];
+                  vizElement.style.width = '100%';
+                  vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                  var scriptElement = document.createElement('script');
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              </script>
+          </div>
+          <div class="col-sm-4">
+              <p id='years'>2020</p>
+              <div class='tableauPlaceholder' id='viz1610892178613' id='divout' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2020Average&#47;Amount2015-20206&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                      <param name='embed_code_version' value='3' />
+                      <param name='site_root' value='' />
+                      <param name='name' value='2020Average&#47;Amount2015-20206' />
+                      <param name='tabs' value='no' />
+                      <param name='toolbar' value='yes' />
+                      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2020Average&#47;Amount2015-20206&#47;1.png' />
+                      <param name='animate_transition' value='yes' />
+                      <param name='display_static_image' value='yes' />
+                      <param name='display_spinner' value='yes' />
+                      <param name='display_overlay' value='yes' />
+                      <param name='display_count' value='yes' />
+                      <param name='language' value='en-GB' />
+                      <param name='filter' value='publish=yes' />
+                  </object></div>
+              <script type='text/javascript'>
+                  var divElement = document.getElementById('viz1610892178613');
+                  var vizElement = divElement.getElementsByTagName('object')[0];
+                  vizElement.style.width = '100%';
+                  vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                  var scriptElement = document.createElement('script');
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              </script>
+          </div>
+          <br>
+          <br>
+      </div>
+      <br>
+      <br>
+  </div>
+  <div class="parallax-window1" data-parallax="scroll" data-image-src="banner2.png"></div>
+
+  <div class="parallax-window1" data-parallax="scroll" data-image-src="banner1.png"></div>-->
+  <br>
+  <br>
+  <div class="container-fluid bg-3 text-center">
+      <div class="row">
+          <div class="col min-vh-50">
+              <h1>Average house price 2015-2020</h1>
+              <br>
+              <div class='tableauPlaceholder' id='viz1612109172998' id='divout' style='position: relative; width: 904px; height: 320px'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;Averagetrends&#47;AVR20202&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                      <param name='embed_code_version' value='3' />
+                      <param name='site_root' value='' />
+                      <param name='name' value='Averagetrends&#47;AVR20202' />
+                      <param name='tabs' value='no' />
+                      <param name='toolbar' value='yes' />
+                      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;Averagetrends&#47;AVR20202&#47;1.png' />
+                      <param name='animate_transition' value='yes' />
+                      <param name='display_static_image' value='yes' />
+                      <param name='display_spinner' value='yes' />
+                      <param name='display_overlay' value='yes' />
+                      <param name='display_count' value='yes' />
+                      <param name='language' value='en-GB' />
+                  </object></div>
+              <script type='text/javascript'>
+                  var divElement = document.getElementById('viz1612109172998');
+                  var vizElement = divElement.getElementsByTagName('object')[0];
+                  vizElement.style.width = '100%';
+                  vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                  var scriptElement = document.createElement('script');
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              </script>
+          </div>
+
+          <div class="footer-basic">
+              <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+              <footer>
+
+                  <div>
+
+                      <a href='https://www.linkedin.com/in/bryanagar/' target="_blank">
+                          <ion-icon size="large" name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a href="mailto:bryanagar1.com" target="_blank">
+                          <ion-icon size="large" name="logo-google"></ion-icon>
+                      </a>
+                      <a href='https://github.com/BryanAgar' target="_blank">
+                          <ion-icon size="large" name="logo-github"></ion-icon>
+                      </a>
+                      <a href='https://twitter.com/AgarBryan' target="_blank">
+                          <ion-icon size="large" name="logo-twitter"></ion-icon>
+                      </a>
+                      <a href='https://www.instagram.com/bryanagar/' target="_blank">
+                          <ion-icon size="large" name="logo-instagram"></ion-icon>
+                      </a>
+                  </div>
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a href="Test.html">Home</a></li>
+                      <li class="list-inline-item"><a href="#">Indepth</a></li>
+                      <li class="list-inline-item"><a href="History.html">About</a></li>
+                      <li class="list-inline-item"><a href="trends.html">Trends</a></li>
+                      <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                  </ul>
+                  <p class="copyright">Bryan Agar © 2021</p>
+              </footer>
+          </div>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+      </div>
+  </div>
+  <script>
+      // Source code licensed under Apache License 2.0. 
+      // Copyright © 2017 William Ngan. (https://github.com/williamngan/pts)
+
+      window.demoDescription = "In a field of points that revolves around a center, draw a perpendicular line from each point to a path.";
+
+      Pts.quickStart("#pt", "#123");
+
+      //// Demo code starts (anonymous function wrapper is optional) ---
+
+      (function() {
+
+          var pts = new Group();
+
+          space.add({
+
+              // creatr 200 random points
+              start: (bound) => {
+                  pts = Create.distributeRandom(space.innerBound, 400);
+              },
+
+              animate: (time, ftime) => {
+                  // make a line and turn it into an "op" (see the guide on Op for more)
+                  let perpend = new Group(space.center.$subtract(0.1), space.pointer).op(Line.perpendicularFromPt);
+                  pts.rotate2D(0.0005, space.center);
+
+                  pts.forEach((p, i) => {
+                      // for each point, find the perpendicular to the line
+                      let lp = perpend(p);
+                      var ratio = Math.min(1, 1 - lp.$subtract(p).magnitude() / (space.size.x / 2));
+                      form.stroke(`rgba(255,255,255,${ratio}`, ratio * 2).line([p, lp]);
+                      form.fillOnly(["#f03", "#09f", "#0c6"][i % 3]).point(p, 1);
+                  });
+              },
+
+          });
+
+          //// ----
+
+
+          space.bindMouse().bindTouch().play();
+
+      })();
+  </script>
+  </body>
+
+  </html>
+
+

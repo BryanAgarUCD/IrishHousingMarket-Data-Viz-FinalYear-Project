@@ -1,0 +1,310 @@
+/*External stylesheet CSS used throughout webpages*/
+
+
+/*CSS code to style home page "2015 -2020" */
+#years {
+    color: #84A094;
+
+}
+/*Footer styling*/
+#footer {
+    background-color: #98768B;
+
+}
+/*Body style*/
+body {
+    background-color: #f5f5f5;
+
+            font-family: 'Montserrat';
+            font-size: 22px;
+
+}
+/*CSS for history section of website. Height,BG Color and margin changed*/
+#historybox {
+    height: 450px;
+    background-color: #84A094;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+
+
+}
+#historybox1 {
+    height: 450px;
+    background-color: #84A094;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+
+
+}
+/*code for picture on history page*/
+#john {
+    border-radius: 50%;
+    max-width: 100%;
+    height: 300px;
+    margin-left: 60px;
+    transition: transform .2s;
+    /* Animation */
+}
+/*Code for image in about me section*/
+#bryan {
+    border-radius: 50%;
+    max-width: 100%;
+    height: 300px;
+    margin-left: 30px;
+    transition: transform .2s;
+    /* Animation */
+}
+
+#bryan1 {
+    margin-left: 90px;
+    font-size: 15px;
+}
+
+/* [1] The container */
+/*CSS for animation */
+.img-hover-zoom {
+    height: 300px;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+/*Code for names of people*/
+#name {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+#name1 {
+    margin-top: 30px;
+    margin-left: 85px;
+}
+/*About section styling*/
+#aboutbox {
+    margin-top: 100px;
+}
+/* Icons in footer styling */
+ion-icon {
+    color: #1B2125;
+}
+
+footer-basic {
+    padding: 60px 0;
+    background-color: #98768B;
+    color: #98768B;
+}
+/*Footer styling*/
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #98768B;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #98768B;
+}
+/*Horizintal line coding, make it a gradient*/
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+/*Code for styling JS back to the top button*/
+#back2Top {
+    width: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    z-index: 1000;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 60px;
+    right: 5px;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+/*Header css code*/
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+/*Video styling code*/
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: auto;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        max-width: 100%;
+        background: <source src="homepage1.mp4"type="video/mp4">
+    }
+
+    header video {
+        max-width: 100%;
+    }
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    
+    
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: #32CD32;
+    width: 0%;
+}
+/*Nav bar styling*/
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+/*Live chat bot code styling */
+
+.LandbotLivechat {
+/*    left: 105px;*/
+    top: 450px;
+}
+
+.LandbotPopup {
+    top: 405px;
+}
+
+.LandbotProactive {
+    top: 455px;
+}
+
+.LandbotFrame {
+    top: 255px;
+}
+
+
+.parallax-window1 {
+    min-height: 750px;
+    background: transparent;
+    
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}

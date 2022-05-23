@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Irish housing data</title>
+    <meta charset="utf-8">
+    <!--Sets content to device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--External bootstrap plugins-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--External link to icons, used in footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <!--Link to external style sheet-->
+    <link rel="stylesheet" href="styles1.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Falcon code, image in tab-->
+    <link rel="icon" href="falcon.png">
+    <!--Link to form valindation javascript file-->
+    <!-- Link to google fonts for Montserrat-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!--Link to external JS File-->
+    <script src='myjs.js'> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--Link to parallax plugin-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!--Link to interacrive plugin at footer-->
+    <script src="https://unpkg.com/pts/dist/pts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
+    <!--Internal styling of webpage-->
+    <style>
+        body {
+            font-family: 'Montserrat';
+            font-size: 22px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Used when javascript is disabled-->
+    <noscript>
+
+        <div class="noscriptmsg">
+            <br>
+            <h2>You don't have javascript enabled.<br> Please enable to use site</h2>
+        </div>
+    </noscript>
+    <!-- Makes Nav var fixed in postion throughout website, changed for styling -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Final Year Project</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"> <a href="Indepth.html">Detailed Stats</a></li>
+                    <li><a href="History.html">History</a></li>
+                    <li><a href="trends.html">Trends</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <div class="jumbotron">
+        <div class="container text-center">
+            <br>
+            <br>
+            <!--Animated text for header-->
+            <h1 class="animate__animated animate__bounce">Housing Data</h1>
+            <p class="animate__animated animate__bounce">Indepth content</p>
+            <br>
+        </div>
+    </div>
+    <!--Chat bot code-->
+    <script src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+    <script>
+        var myLandbot = new Landbot.Livechat({
+            configUrl: 'https://chats.landbot.io/v3/H-826045-062XD1QMS29P8UXY/index.json',
+        });
+
+    </script>
+    <br>
+    <!--Start of main content-->
+    <div class="container-fluid bg-3 text-center">
+        <div class="row">
+            <div class="col">
+                <h1>Interactive dashboard average price</h1>
+                <br>
+                <!--Button for dark mode-->
+                <h4><button type="button" name="button" id="btn">Toggle for dark mode</button></h4>
+                <br>
+                <!--Tableau content, postion, width and height added to content-->
+                <div class='tableauPlaceholder' id='viz1621083035535' style='position: relative; width: 904px; height: 320px'><noscript><a href='#'><img alt='DUBLIN Graphic ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Du&#47;Dublinpostalcodes_V2&#47;DUBLINGraphic&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;' type='text/javascript'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Dublinpostalcodes_V2&#47;DUBLINGraphic' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Du&#47;Dublinpostalcodes_V2&#47;DUBLINGraphic&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-GB' />
+                    </object></div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1621083035535');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '1277px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+                </script>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>Interactive Dublin dashboard</h1>
+        <br>
+        <!--Tableau content, postion, width and height added to content-->
+
+        <div class='tableauPlaceholder' id='viz1621083343690' style='position: relative; width: 904px; height: 320px'><noscript><a href='#'><img alt='DUBLIN Graphic (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Du&#47;Dublinpostalregions&#47;DUBLINGraphic2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;' type='text/javascript'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Dublinpostalregions&#47;DUBLINGraphic2' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Du&#47;Dublinpostalregions&#47;DUBLINGraphic2&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-GB' />
+                <param name='filter' value='publish=yes' />
+            </object></div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1621083343690');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '927px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+        </script>
+
+
+
+        <!--Tableau content, postion, width and height added to content-->
+
+        <br>
+        <hr>
+        <br>
+        <h1>New and Secondhand developments comparison dashboard</h1>
+        <br>
+
+        <div class='tableauPlaceholder' id='viz1621080401741' style='position: relative; width: 904px; height: 320px'><noscript><a href='#'><img alt='Dashboard 7 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8H&#47;8HWF9939P&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;' type='text/javascript'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='path' value='shared&#47;8HWF9939P' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8H&#47;8HWF9939P&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-GB' />
+            </object></div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1621080401741');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '877px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+        </script>
+
+
+        <br>
+        <hr>
+        <br>
+                
+                <h1>Timelapse of housing data  |  2010 - 2020</h1>
+                <br>
+        <div class='tableauPlaceholder' id='viz1621246634720' style='position: relative; width: 904px; height: 320px'><noscript><a href='#'><img alt='Dashboard 11 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AN&#47;ANIMATEDGRAPH&#47;Dashboard112&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;' type='text/javascript'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='ANIMATEDGRAPH&#47;Dashboard112' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AN&#47;ANIMATEDGRAPH&#47;Dashboard112&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-GB' />
+            </object></div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1621246634720');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '777px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+        <br>
+        <hr>
+        <br>
+                
+                <h1>Ireland 2020 analysis</h1>
+                <br>
+                <div class='tableauPlaceholder' id='viz1621242735018' style='position: relative; width: 904px; height: 320px'><noscript><a href='#'><img alt='Dashboard 14 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Du&#47;Dublinpostalregions&#47;Dashboard14&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;' type='text/javascript'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Dublinpostalregions&#47;Dashboard14' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Du&#47;Dublinpostalregions&#47;Dashboard14&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-GB' />
+                        <param name='filter' value='publish=yes' />
+                    </object></div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1621242735018');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '827px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+        
+        <hr>
+        <br>
+                
+                <h1>Dublin 2020 analysis</h1>
+                <br>
+                <div class='tableauPlaceholder' id='viz1621245902472' style='position: relative; width: 904px; height: 320px'><noscript><a href='#'><img alt='Dashboard 14 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Du&#47;Dublinpostalregions&#47;Dashboard142&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;' type='text/javascript'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Dublinpostalregions&#47;Dashboard142' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Du&#47;Dublinpostalregions&#47;Dashboard142&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-GB' />
+                        <param name='filter' value='publish=yes' />
+                    </object></div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1621245902472');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '877px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+        
+        
+            
+                <!--Footer code   -->
+        <div class="footer-basic">
+            <footer>
+                <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+                <div>
+                    <a href='https://www.linkedin.com/in/bryanagar/' target="_blank">
+                        <ion-icon size="large" name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="mailto:bryanagar1.com" target="_blank">
+                        <ion-icon size="large" name="logo-google"></ion-icon>
+                    </a>
+
+                    <a href='https://github.com/BryanAgar' target="_blank">
+                        <ion-icon size="large" name="logo-github"></ion-icon>
+                    </a>
+                    <a href='https://twitter.com/AgarBryan' target="_blank">
+                        <ion-icon size="large" name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href='https://www.instagram.com/bryanagar/' target="_blank">
+                        <ion-icon size="large" name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+                <br>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="Indepth.html">Indepth</a></li>
+                    <li class="list-inline-item"><a href="History.html">History</a></li>
+                    <li class="list-inline-item"><a href="trends.html">Trends</a></li>
+                    <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <p class="copyright">Bryan Agar © 2021</p>
+                <!--JS aninmation vizulation code, outsourced-->
+                <script>
+                    // Source code licensed under Apache License 2.0. 
+                    // Copyright © 2017 William Ngan. (https://github.com/williamngan/pts)
+
+                    window.demoDescription = "In a field of points that revolves around a center, draw a perpendicular line from each point to a path.";
+
+                    Pts.quickStart("#pt", "#123");
+
+                    //// Demo code starts (anonymous function wrapper is optional) ---
+
+                    (function() {
+
+                        var pts = new Group();
+
+                        space.add({
+
+                            // creatr 200 random points
+                            start: (bound) => {
+                                pts = Create.distributeRandom(space.innerBound, 400);
+                            },
+
+                            animate: (time, ftime) => {
+                                // make a line and turn it into an "op" (see the guide on Op for more)
+                                let perpend = new Group(space.center.$subtract(0.1), space.pointer).op(Line.perpendicularFromPt);
+                                pts.rotate2D(0.0005, space.center);
+
+                                pts.forEach((p, i) => {
+                                    // for each point, find the perpendicular to the line
+                                    let lp = perpend(p);
+                                    var ratio = Math.min(1, 1 - lp.$subtract(p).magnitude() / (space.size.x / 2));
+                                    form.stroke(`rgba(255,255,255,${ratio}`, ratio * 2).line([p, lp]);
+                                    form.fillOnly(["#f03", "#09f", "#0c6"][i % 3]).point(p, 1);
+                                });
+                            },
+
+                        });
+
+                        //// ----
+
+
+                        space.bindMouse().bindTouch().play();
+
+                    })();
+
+                </script>
+                <!--Button and JS code for dark mode-->
+                <script>
+                    // Persistence disabled
+                    var Nightly = new Nightly();
+                    document.getElementById("btn").addEventListener("click", function() {
+                        Nightly.toggle();
+                    });
+
+                </script>
+            </footer>
+            <!--Code for page progress bar, set at bottom so code knows how long is left-->
+
+            <div class="header">
+                <h2>Scroll Indicator</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

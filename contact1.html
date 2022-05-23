@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="icon" href="falcon.png">
+    <noscript>To use this site, please enable JavaScript.</noscript>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">-->
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src='myjs.js'>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://unpkg.com/pts/dist/pts.min.js"></script>
+    <script src="form12.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat';
+            font-size: 22px;
+        }
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            max-width: 100%;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+        
+        .LandbotLivechat {
+            left: 105px;
+        }
+        
+        .LandbotPopup {
+            left: 105px;
+        }
+        
+        .LandbotProactive {
+            left: 10px;
+        }
+        
+        .LandbotFrame {
+            left: 10px;
+        }
+        
+        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+        #p1 {
+            border-right: solid 5px rgba(0, 0, 0, 100);
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 35px;
+            color: black;
+        }
+        /* Animation */
+        
+        #p1 {
+            animation: animated-text 4s linear 1s 1 normal both, animated-cursor 600ms linear infinite;
+        }
+        /* text animation */
+        
+        @keyframes animated-text {
+            from {
+                width: 0;
+            }
+            to {
+                width: 580px;
+            }
+        }
+        /* cursor animations */
+        
+        @keyframes animated-cursor {
+            from {
+                border-right-color: rgba(0, 0, 0, .75);
+            }
+            to {
+                border-right-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Makes Nav var fixed in postion throughout website -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                    <a class="navbar-brand" href="index.html">Final Year Project</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li> <a href="Indepth.html">Detailed Stats</a></li>
+                        <li><a href="History.html">History</a></li>
+                        <li><a href="trends.html">Trends</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+
+    <!--
+<div class="jumbotron">
+  <div class="container text-center">
+    <br>
+    <br>
+    <h1>Housing Data</h1>      
+    <p>Housing trend</p>
+    <br>
+  </div>
+</div>
+-->
+    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+    <script>
+        var myLandbot = new Landbot.Livechat({
+            configUrl: 'https://chats.landbot.io/v3/H-826045-062XD1QMS29P8UXY/index.json',
+        });
+    </script>
+
+    <div class="container">
+        <br>
+        <br>
+        <p id='p1'>Feedback? Get in contact below</p>
+
+        <form method="post" name="myForm" action="contact.php" onsubmit="return validateForm()">
+            <div class='row'>
+                <div class="col-md-12">
+                    <h1>Submit contact details</h1>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-6">
+                    <h3>Name</h3>
+                    <input type="text" name="firstname" id="firstName" placeholder="First Name">
+                    <h5 class="error" id="firstNameError"></h5>
+                </div>
+
+                <div class="col-md-6">
+                    <h3>Last name</h3>
+                    <input type="text" name="lastname" id="lastName" placeholder="Last Name">
+                    <h5 class="error" id="lastNameError"></h5>
+                </div>
+                <div class="col-md-6">
+                    <h3>Email Address</h3>
+                    <input type="text" name="emailaddress" id="emailaddress" placeholder="Email">
+                    <h5 class="error" id="emailError"></h5>
+                </div>
+                <div class="col-md-6">
+                    <h3>Job Title</h3>
+                    <input type="text" id="jobtitle" name="jobtitle">
+                    <h5 class="error" id="jobtitleError"></h5>
+                </div>
+            </div>
+
+
+            <div class="six row6">
+                <h3>Data Intrests</h3>
+                <select name="storytype" id="storytype">
+                    <option value="nothing"></option>
+                    <option value="Dublin city">Dublin City</option>
+                    <option value="Dublin South">South Dublin</option>
+                    <option value="North Dublin">North Dublin</option>
+                    <option value="Fingal">Fingal council</option>
+                    <option value="Dundrum">Dundrum - DL</option>
+                    <option value="South Dublin">South Dublin</option>
+                    <option value="Leinster">Leinster region</option>
+                    <option value="Munster">Munster region</option>
+                    <option value="Ulster">Ulster region</option>
+                    <option value="Connacht">Connacht region</option>
+                    <option value="House prices">House prices</option>
+                </select>
+                <h5 class="error" id="storytypeError"></h5>
+            </div>
+
+            <div class="twelve row7">
+                <h3>Feedback / suggestions</h3>
+                <textarea name="storytext" id="storytext"></textarea>
+                <h5 class="error" id="storytextError"></h5>
+            </div>
+
+            <div class="six row8">
+
+                <input type="submit" id="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+        <!-- Start of HubSpot Embed Code -->
+        <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9419669.js"></script>
+End of HubSpot Embed Code -->
+
+
+
+
+
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlRDiAmZv77hq0KSY_4wYY4sChLsWZVXOSBXfcznY2wwvl_Q/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="banner.jpg"></div>
+
+    <div class="container-fluid bg-3 text-center">
+        <footer class="footer-basic">
+            <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+            <div>
+                <a href='https://www.linkedin.com/in/bryanagar/' target="_blank">
+                    <ion-icon size="large" name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="mailto:bryanagar1.com" target="_blank">
+                    <ion-icon size="large" name="logo-google"></ion-icon>
+                </a>
+
+                <a href='https://github.com/BryanAgar' target="_blank">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                </a>
+                <a href='https://twitter.com/AgarBryan' target="_blank">
+                    <ion-icon size="large" name="logo-twitter"></ion-icon>
+                </a>
+                <a href='https://www.instagram.com/bryanagar/' target="_blank">
+                    <ion-icon size="large" name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+            <br>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="Indepth.html">Indepth</a></li>
+                <li class="list-inline-item"><a href="History.html">About</a></li>
+                <li class="list-inline-item"><a href="trends.html">Trends</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="copyright">Bryan Agar © 2021</p>
+        </footer>
+        <script>
+            // Source code licensed under Apache License 2.0. 
+            // Copyright © 2017 William Ngan. (https://github.com/williamngan/pts)
+
+            window.demoDescription = "In a field of points that revolves around a center, draw a perpendicular line from each point to a path.";
+
+            Pts.quickStart("#pt", "#123");
+
+            //// Demo code starts (anonymous function wrapper is optional) ---
+
+            (function() {
+
+                var pts = new Group();
+
+                space.add({
+
+                    // creatr 200 random points
+                    start: (bound) => {
+                        pts = Create.distributeRandom(space.innerBound, 400);
+                    },
+
+                    animate: (time, ftime) => {
+                        // make a line and turn it into an "op" (see the guide on Op for more)
+                        let perpend = new Group(space.center.$subtract(0.1), space.pointer).op(Line.perpendicularFromPt);
+                        pts.rotate2D(0.0005, space.center);
+
+                        pts.forEach((p, i) => {
+                            // for each point, find the perpendicular to the line
+                            let lp = perpend(p);
+                            var ratio = Math.min(1, 1 - lp.$subtract(p).magnitude() / (space.size.x / 2));
+                            form.stroke(`rgba(255,255,255,${ratio}`, ratio * 2).line([p, lp]);
+                            form.fillOnly(["#f03", "#09f", "#0c6"][i % 3]).point(p, 1);
+                        });
+                    },
+
+                });
+
+                //// ----
+
+
+                space.bindMouse().bindTouch().play();
+
+            })();
+        </script>
+    </div>
+
+
+
+</body>
+
+</html>
